@@ -1,134 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X06YFCMMXJ"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-X06YFCMMXJ"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
 
-      gtag('config', 'G-X06YFCMMXJ');
-    </script>
-    <title>Ariba's Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-    <style>
-        a.see{
-            font-size:xx-large;
-            margin-left: 20px;
-        }
-        p.see1{
-            text-align: center;
-        }
-        i.see2{
-            align-content: center;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <div class="name">
-            <a class="see" href="">Portfolio</a>
-        </div>
-       <div class="navDiv">
-        <label for="menu">
-            <i class="fa-solid fa-bars"></i>
-        </label>
-       </div>
-        <input type="checkbox" id="menu">
-        <ul class="nav">
-            
-            <label for="menu">
-                <i class="fa-solid fa-xmark"></i>
-            </label>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#project">About me</a></li>
-            <li><a href="#skill">Skills</a></li>
-            <li><a href="#contact">Contact me</a></li>
-        </ul>
-    </header>
-
-    <div class="container">
-        <div class="banner" id="home">
-            <div class="content">
-                <br><br><br><br>
-                <p>WELCOME TO MY PROFILE</p>
-                <h1>
-                    Hi, I'm Ariba Khan <br/>
-                    a <div class="gradientText">
-                        <div class="job" data-job1="FrondEnd" data-job2="BackEnd"></div>
-                    </div>
-                </h1>
+            gtag('config', 'G-X06YFCMMXJ');
+        </script>
+        <title>Ariba's Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+        <style>
+            a.see{
+                color: blueviolet;
+                font-size:xx-large;
+                font-weight: bold;
+                margin-left: 20px;
+            }/*
+            i.see2{
+                align-content: center;
+            }*/
+        </style>
+    </head>
+    <body><!-- oncontextmenu="return false"-->
+        <header>
+            <div class="name">
+                <a class="see" href="">Portfolio</a>
             </div>
-            <div class="avatar">
-                <img src="avatar.png" alt="" width="100" height="500">
+            <div class="navDiv">
+                <label for="menu">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+            </div>
+            <input type="checkbox" id="menu">
+            <ul class="nav">
+                <label for="menu">
+                    <i class="fa-solid fa-xmark"></i>
+                </label>
+                <li><a style="color:blueviolet; font-weight: bold;" href="index.html">Home</a></li>
+                <li><a style="color:blueviolet; font-weight: bold;" href="aboutme.html">About me</a></li>
+                <li><a style="color:blueviolet; font-weight: bold;" href="edu.html">Education</a></li>
+                <li><a style="color:blueviolet; font-weight: bold;" href="skill.html">Skills</a></li>
+                <li><a style="color:blueviolet; font-weight: bold;" href="project.html">Projects</a></li>
+                <li><a style="color:blueviolet; font-weight: bold;" href="contact.html">Contact me</a></li>
+            </ul>
+        </header>
+        <div class="container">
+            <div class="banner" id="home">
+                <div class="content">
+                    <br><br><br><br>
+                    <p>WELCOME TO MY PROFILE</p>
+                    <h1>
+                        Hi, I'm Ariba Khan <br/>
+                        a <div class="gradientText">
+                            <div class="job" data-job1="FrondEnd" data-job2="BackEnd">
+                            </div>
+                        </div><br>
+                        Developer.
+                    </h1>
+                </div>
+                <div class="avatar">
+                    <img src="avatar.png" alt="" width="574" height="500">
+                </div>
             </div>
         </div>
-        <div id="project">
-            <h1 class="title">About me</h1>
-            <p class="see1">
-                I'm Ariba Khan, a third year student pursuing Information Technology from Ramniranjan Jhunjhunwala College, Ghatkopar, Mumbai. <br>I’ve good command in Python, HTML, Java and more programming languages. I'm a Developer and Game Programmer.
-            </p>
-            <div class="find">
-                <h3>FIND WITH ME</h3>
+        <footer class="footer">
+            <div id="contact">
+                <hr color="black">
+                <hr color="blueviolet">
+                <hr color="black">
+                <h2 class="title">Get in Touch</h2>
                 <ul class="contact">
+                    <li><a href="tel:7039973323"><i class="fa-solid fa-phone"></i></a></li>
+                    <li><a href="mailto:khanariba0396@gmail.com"><i class="fa-solid fa-envelope"></i></a></li>
+                    <li><a href="https://goo.gl/maps/dGJYUcaoGxL5KFT98"><i class="fa-solid fa-location-dot"></i></a></li>
                     <li><a href="https://api.whatsapp.com/send?phone=7039973323"><i class="fa-brands fa-whatsapp"></i></a></li>
                     <li><a href="https://www.snapchat.com/add/kariba396?share_id=66jQ5rC2Qok&locale=en-US"><i class="fa-brands fa-snapchat"></i></a></li>
                     <li><a href="https://t.me/kariba396"><i class="fa-brands fa-telegram"></i></a></li>
                 </ul>
+                <h3 class="title">Thank you for visiting my profile!&nbsp;Designed by ~Ariba</h3>
             </div>
-       </div>
-       <div id="skill">
-        <h1 class="title">SKILLS</h1>
-        <div class="listSkill">
-            <div class="item">
-                <div class="name">HTML</div>
-                <div class="evaluate" style="--point:70%"></div>
-            </div>
-            <div class="item">
-                <div class="name">PHP</div>
-                <div class="evaluate" style="--point:45%"></div>
-            </div>
-            <div class="item">
-                <div class="name">CSS</div>
-                <div class="evaluate" style="--point:55%"></div>
-            </div>
-            <div class="item">
-                <div class="name">Java</div>
-                <div class="evaluate" style="--point:65%"></div>
-            </div>
-            <div class="item">
-                <div class="name">Django</div>
-                <div class="evaluate" style="--point:30%"></div>
-            </div>
-            <div class="item">
-                <div class="name">DBMS</div>
-                <div class="evaluate" style="--point:80%"></div>
-            </div>
-            <div class="item">
-                <div class="name">C++</div>
-                <div class="evaluate" style="--point:80%"></div>
-            </div>
-            <div class="item">
-                <div class="name">Python</div>
-                <div class="evaluate" style="--point:75%"></div>
-            </div>
-        </div>
-       </div>
-       <div id="contact">
-        <h1 class="title">Contact me</h1>
-        <!--<h3 class="find">Mobile number : 7039973323</h3>
-        <h3 class="find">Mail address  : khanariba0396@gmail.com</h3>-->
-        <ul class="contact">
-            <li><a href="tel:7039973323"><i class="fa-solid fa-phone"></i></a></li>
-            <li><a href="mailto:khanariba0396@gmail.com"><i class="fa-solid fa-envelope"></i></a></li>
-            <li><a href="https://goo.gl/maps/dGJYUcaoGxL5KFT98"><i class="fa-solid fa-location-dot"></i></a></li>
-        </ul>
-       </div>
-    </div>
-</body>
+        </footer>
+    </body>
 </html>
