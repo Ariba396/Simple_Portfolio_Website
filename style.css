@@ -1,35 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
-html{
+/*html{
     scroll-behavior: smooth;
-}
+}*/
 :root{
     --light: #eaecee;
     --color-text: #3c3e41;
     --box-shadow: 
     5px 5px 15px #c1c8d3, 
     -5px -5px 15px #ffffff;
-    --gradient-bg: linear-gradient(-45deg, #D000F7, #24BAE3);
+    --gradient-bg: linear-gradient(-45deg, #ff56eb, #35fdd8);
 }
 a{
-    color: #3c3e41;
+    color:black;
     text-decoration: none;
 }
 body{
     margin: 0;
-    background-color: var(--light);
+    background-color:whitesmoke;
     color: var(--color-text);
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
 }
 header{
-    position: fixed;
+    position:fixed;
     top: 0;
     width: calc(100% - 20px);
     padding: 10px;
     border-bottom: 1px solid #dce1e4;
     display: grid;
     grid-template-columns: 30% 70%;
-    background-color: var(--light);
+    background-color:aliceblue;
     z-index: 1;
 }
 header .logo img{
@@ -47,18 +47,19 @@ header ul li{
     padding: 0 30px;
 }
 .container{
-    width: 1200px;
-    max-width: 90%;
-    margin: auto;
+    background-color:whitesmoke;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 100%;
+    width: 100%;
 }
 .banner{
-    margin-top: 150px;
     display: grid;
     grid-template-columns: 60% 40%;
-    border-bottom: 1px solid #dce1e4;
     padding-bottom: 50px;
 }
 .banner .content{
+    margin-left: 20px;
     text-align: justify;
     padding-right: 50px;
 }
@@ -126,18 +127,10 @@ header ul li{
     position:relative;
     text-align: center;
 }
-.banner .avatar::before{
-    position: absolute;
-    width: 90%;
-    height: 100%;
-    content: '';
-    z-index: -1;
-    bottom: 0;
-    border-radius: 8px;
-    box-shadow: var(--box-shadow);
-}
 .banner img{
-    width: 90%;
+    margin-top: 30px;
+    width: 100%;
+    height: 90%;
 }
 header .navDiv,
 header .nav label,
@@ -146,13 +139,11 @@ header input{
 }
 .title{
     text-align: center;
-    padding-top: 50px;
 }
 .listSkill{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px 20px;
-    border-bottom: 1px solid #dce1e4;
     padding-bottom: 50px;
 }
 .listSkill .evaluate{
@@ -160,7 +151,8 @@ header input{
     height: 20px;
     box-shadow: var(--box-shadow);
     border-radius: 10px;
-    margin-top: 20px;
+    margin-top: 15px;
+    margin-left: 300px;
     position: relative;
 }
 .listSkill .evaluate::before{
@@ -179,7 +171,6 @@ header input{
     padding-bottom: 50px;
 }
 .listProject .item{
-    text-align: center;
     box-shadow: var(--box-shadow);
     padding: 20px;
 }
@@ -199,7 +190,7 @@ header input{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 10px;
 }
 .contact li{
     width: 50px;
@@ -268,8 +259,9 @@ header input{
         z-index: 1;
         width: 70%;
         height: 100vh;
-        left: 0;
-        top: 0;
+        /*left: 0;
+        top: 0;*/
+        margin-left: 10px;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(5, 70px);
@@ -298,4 +290,7 @@ header input{
     .listProject{
         grid-template-columns: 1fr;
     }
+}
+.footer{
+    background-color:aliceblue;
 }
